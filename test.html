@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar System Explorer</title>
+  </head>
+
+  <body>
+
+    <div id="app"></div>
+
+    <section class="search-section">
+      <input type="text" id="planetSearch" placeholder="Search Planet..." onkeyup="searchPlanet()" />
+    </section>
+
+    <section class="calculator">
+      <h2>Planet Distance Calculator</h2>
+
+      <select id="planet1">
+        <option>Mercury</option>
+        <option>Venus</option>
+        <option>Earth</option>
+        <option>Mars</option>
+        <option>Jupiter</option>
+        <option>Saturn</option>
+        <option>Uranus</option>
+        <option>Neptune</option>
+      </select>
+
+      <select id="planet2">
+        <option>Mercury</option>
+        <option>Venus</option>
+        <option>Earth</option>
+        <option>Mars</option>
+        <option>Jupiter</option>
+        <option>Saturn</option>
+        <option>Uranus</option>
+        <option>Neptune</option>
+      </select>
+
+      <button onclick="calculateDistance()">Calculate Distance</button>
+
+      <h3 id="distanceResult"></h3>
+    </section>
+
+    <section id="space3D"></section>
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Solar System Explorer</title>
+    <link rel="icon" href="/solar-system/public/textures/a y2k fairy.png" type="image/png">
+  </head>
+
+  <body>
+    <header>
+      <h1>🌌 Solar System Explorer</h1>
+    </header>
+
+    <!-- 🌌 3D SECTION FIRST -->
+    <section id="spaceContainer">
+      <div id="space3D"></div>
+    </section>
+
+    <!-- UI BELOW -->
+    <section class="calculator">
+      <h2>Planet Distance Calculator</h2>
+
+      <select id="planet1"></select>
+      <select id="planet2"></select>
+
+      <button id="calcBtn">Calculate Distance</button>
+      <h3 id="distanceResult"></h3>
+    </section>
+
+    <section class="comparison">
+      <h2>Compare Planets</h2>
+
+      <select id="compare1"></select>
+      <select id="compare2"></select>
+
+      <button id="compareBtn">Compare</button>
+      <div id="comparisonResult"></div>
+    </section>
+
+    <section class="fun-facts">
+      <h2>Space Facts</h2>
+      <button id="factBtn">Generate Fact</button>
+      <p id="factDisplay"></p>
+    </section>
+
+    <section class="nasa-section">
+      <h2>NASA Picture of the Day</h2>
+
+      <img id="apodImage" />
+      <h3 id="apodTitle"></h3>
+      <p id="apodDescription"></p>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
